@@ -60,9 +60,9 @@ function changeImageAndBtn(volume) {
     vol_image.src = './assets/media/icons/volume-level-3.svg';
   } else if (volume >= 34) {
     vol_image.src = './assets/media/icons/volume-level-2.svg';
-  } else if (volume >= 1) {
+  } else if (volume > 0) {
     vol_image.src = './assets/media/icons/volume-level-1.svg';
-  } else if (volume >= 0) {
+  } else if (volume == 0) {
     vol_image.src = './assets/media/icons/volume-level-0.svg';
     button.disabled = true;
   }
